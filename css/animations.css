@@ -1,0 +1,212 @@
+/* ==========================================================================
+   KIRUL DE SILVA — ANIMATIONS & KEYFRAMES
+   Motion Design, Cyber Glitches, Neon Pulses & Floating Physics
+   ========================================================================== */
+
+/* Neon Red Pulse */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 23, 68, 0.4), 0 0 30px rgba(255, 23, 68, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 23, 68, 0.8), 0 0 50px rgba(255, 23, 68, 0.4), 0 0 75px rgba(255, 23, 68, 0.2);
+  }
+}
+
+/* Subtle Dot Blink */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+/* Floating Physics Animation (for hero stickers & cartoon badges) */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(3deg);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(-4deg);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(12px) rotate(4deg);
+  }
+}
+
+/* Radar Scan Line */
+@keyframes radar-scan {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.2;
+  }
+}
+
+/* Cyber Text Glitch */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* Rotating HUD Reticle */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Typewriter Cursor Blink */
+@keyframes blink-cursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Energy Line Marquee */
+@keyframes energy-scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Hero Character Hologram Aura */
+@keyframes aura-breathe {
+  0%, 100% {
+    filter: drop-shadow(0 0 25px rgba(255, 23, 68, 0.45));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 50px rgba(255, 23, 68, 0.85)) drop-shadow(0 0 100px rgba(255, 48, 79, 0.4));
+    transform: scale(1.015);
+  }
+}
+
+/* Animated Border Gradient */
+@keyframes border-glow-cycle {
+  0% {
+    border-color: rgba(255, 23, 68, 0.3);
+  }
+  50% {
+    border-color: rgba(255, 23, 68, 0.8);
+  }
+  100% {
+    border-color: rgba(255, 23, 68, 0.3);
+  }
+}
+
+/* Scroll Indicator Bounce */
+@keyframes scroll-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
+
+/* Utility Animation Classes */
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 4s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 25s linear infinite;
+}
+
+.aura-pulse {
+  animation: aura-breathe 4s ease-in-out infinite;
+}
+
+.cursor-blink {
+  display: inline-block;
+  color: var(--neon-red);
+  font-weight: 900;
+  animation: blink-cursor 0.9s infinite;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

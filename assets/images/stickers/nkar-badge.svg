@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <rect x="2" y="2" width="116" height="36" rx="6" fill="#0d0d14" stroke="#FF1744" stroke-width="1.5"/>
+  <rect x="6" y="6" width="6" height="28" fill="#FF1744"/>
+  <text x="20" y="21" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF">NKAR</text>
+  <text x="20" y="32" font-family="'Space Grotesk', sans-serif" font-weight="600" font-size="8" fill="#999999" letter-spacing="1">TRAVEL HOUSE</text>
+  <circle cx="106" cy="20" r="3.5" fill="#FF1744"/>
+</svg>

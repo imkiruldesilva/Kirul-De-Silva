@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <filter id="glow-fig" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#FF1744" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <rect x="6" y="6" width="68" height="68" rx="14" fill="#0c0c12" stroke="#FF1744" stroke-width="2" filter="url(#glow-fig)"/>
+  <g transform="translate(24, 18) scale(0.68)">
+    <path fill="#FF1744" d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12h12V0H12z"/>
+    <path fill="#FF5252" d="M24 0h12c6.627 0 12 5.373 12 12s-5.373 12-12 12H24V0z"/>
+    <path fill="#FF1744" d="M24 24h12c6.627 0 12 5.373 12 12s-5.373 12-12 12c-6.627 0-12-5.373-12-12V24z"/>
+    <path fill="#FF798A" d="M0 36c0-6.627 5.373-12 12-12h12v24H12c-6.627 0-12-5.373-12-12z"/>
+    <path fill="#FF1744" d="M0 60c0-6.627 5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12c-6.627 0-12-5.373-12-12z"/>
+  </g>
+</svg>
